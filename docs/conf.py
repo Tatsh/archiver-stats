@@ -74,4 +74,7 @@ html_theme_options = {
     'site_url': 'https://archiver-stats.readthedocs.org',
     'toc_title_is_page_title': True
 }
-intersphinx_mapping = {'python': ('https://docs.python.org/3', None)}
+intersphinx_mapping = {
+    'python': ('https://docs.python.org/3', None),
+    'rich': ('https://rich.readthedocs.io/en/stable', None)
+}

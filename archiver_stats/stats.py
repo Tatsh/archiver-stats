@@ -22,7 +22,7 @@ class Category(NamedTuple):
     key : str
         Key used to read and update the counter on the owning :py:class:`Stats`.
     label : str
-        Human-readable label rendered by :py:class:`~archiver_stats.StatusDisplay`.
+        Human-readable label rendered by :py:class:`~archiver_stats.display.StatusDisplay`.
     """
 
     key: str
@@ -44,7 +44,7 @@ class StatusLine(NamedTuple):
     key : str
         Key used to read and update the value on the owning :py:class:`Stats`.
     label : str
-        Human-readable label rendered by :py:class:`~archiver_stats.StatusDisplay`.
+        Human-readable label rendered by :py:class:`~archiver_stats.display.StatusDisplay`.
     after : str | None
         Category key after which this line should render. When ``None``, the line
         renders before all categories.

@@ -37,3 +37,35 @@ Reusable live statistics and progress display for archiver-style CLIs.
 ```shell
 pip install archiver-stats
 ```
+
+## Usage
+
+Declare counters and optional free-form status lines, then drive a live Rich display from the
+`Stats` instance:
+
+```python
+import sys
+
+from archiver_stats import Category, Stats, StatusDisplay, StatusLine
+
+stats = Stats(
+    (Category('hits', 'Hits:'), Category('misses', 'Misses:')),
+    status_lines=(StatusLine('progress', 'Progress:', after='hits'),),
+)
+display = StatusDisplay(stats, stream=sys.stderr, initial_message='Working...')
+display.start()
+try:
+    stats.increment('hits')
+    stats['progress'] = 'https://example.com/1 (1/3)'
+    display.refresh()
+finally:
+    display.stop()
+```
+
+`Stats` is a `MutableMapping` keyed by category or status-line `key`. Counter values are integers
+(update with `stats[key] = value` or `stats.increment(key, amount)`), and status-line values are
+`str` or `None`. Keys are fixed at construction time and the mapping does not support deletion.
+
+`StatusDisplay` wraps a Rich `Live` display: call `start()` and `stop()` around your work,
+`refresh()` to re-render after updating counters, `set_message()` to change the spinner text, and
+`write()` to print a persistent line above the live region.
