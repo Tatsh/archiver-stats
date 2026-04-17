@@ -9,6 +9,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.0.1] - 2026-04-17
+
 ### Added
 
 - Initial extraction from [`patreon-archiver`](https://github.com/Tatsh/patreon-archiver):
@@ -19,4 +21,5 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
     line with aligned counters and status lines, and `STATUS_REFRESH_HZ`
     default refresh rate.
 
-[Unreleased]: https://github.com/Tatsh/archiver-stats/commits/master/
+[Unreleased]: https://github.com/Tatsh/archiver-stats/compare/v0.0.1...HEAD
+[0.0.1]: https://github.com/Tatsh/archiver-stats/releases/tag/v0.0.1
