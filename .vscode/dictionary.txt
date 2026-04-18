@@ -70,6 +70,7 @@ pypa
 pypi
 pyproject
 pytest
+pythonhosted
 regen
 renderable
 ripgreprc
