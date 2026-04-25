@@ -55,7 +55,6 @@ namedtuples
 norecursedirs
 npmjs
 numpy
-numpydoc
 oneline
 pathlib
 pavelzw
