@@ -76,5 +76,6 @@ html_theme_options = {
 }
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3', None),
-    'rich': ('https://rich.readthedocs.io/en/stable', None)
+    'rich': ('https://rich.readthedocs.io/en/stable/', None),
+    'typing-extensions': ('https://typing-extensions.readthedocs.io/en/latest/', None)
 }
