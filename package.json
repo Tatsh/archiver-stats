@@ -1,4 +1,9 @@
 {
+  "_wiswa": {
+    "commandLine": "wiswa",
+    "lastRun": "2026-05-11T12:35:32Z",
+    "version": "18044fe-dirty"
+  },
   "contributors": ["Andrew Udvare <audvare@gmail.com>"],
   "cspell": {
     "cache": {
@@ -95,7 +100,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:Tatsh/archiver-stats.git"
+    "url": "git+https://github.com/Tatsh/archiver-stats.git"
   },
   "scripts": {
     "check-formatting": "prettier --check . && uv run yapf --diff --parallel --recursive . && markdownlint-cli2 --config package.json --configPointer /markdownlint-cli2",
