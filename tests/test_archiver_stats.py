@@ -4,8 +4,9 @@ from __future__ import annotations
 
 import io
 
-from archiver_stats import STATUS_REFRESH_HZ, Category, Stats, StatusDisplay, StatusLine
 import pytest
+
+from archiver_stats import STATUS_REFRESH_HZ, Category, Stats, StatusDisplay, StatusLine
 
 
 def test_stats_counters_start_at_zero() -> None:
