@@ -104,7 +104,6 @@ virtualenv
 winget
 wiswa
 wiswa's
-worktree
 yapf
 yapfignore
 yarnrc
