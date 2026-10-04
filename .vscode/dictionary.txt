@@ -90,7 +90,6 @@ sphinxcontrib
 statusline
 tatsh
 testpaths
-tomlkit
 tomllib
 tostring
 tryfirst
